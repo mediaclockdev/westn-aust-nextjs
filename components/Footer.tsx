@@ -78,10 +78,10 @@ export default function Footer() {
                 className="h-8 w-8 rounded-md bg-gray-800 flex items-center justify-center"
               >
                 <Image
-                  src="/icons/X.svg"
+                  src="/icons/x.svg"
                   width={20}
                   height={20}
-                  alt="LinkedIn"
+                  alt="X"
                 />
               </a>
             </li>

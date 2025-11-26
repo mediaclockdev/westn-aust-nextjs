@@ -20,7 +20,7 @@ export default function Navbar() {
             />
           </div>
 
-          <span className="font-semibold text-lg">WA Dev Company Hello</span>
+          <span className="font-semibold text-lg">WA Dev Company </span>
         </div>
 
         {/* Middle: Links */}
