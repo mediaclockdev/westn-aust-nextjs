@@ -1,48 +1,57 @@
 // "Our Mobile App Development Services" + 3 reusable service cards
-
 const services = [
   {
     title: "iOS Development",
     description:
       "Native iOS applications that deliver exceptional user experiences with cutting-edge features and seamless performance.",
     icon: "",
+    color: "from-purple-500 to-indigo-500",
   },
   {
     title: "Android Development",
     description:
       "Robust Android applications optimized for various devices and screen sizes with modern Material Design principles.",
     icon: "",
+    color: " from-purple-500 to-pink-500 ",
   },
   {
     title: "Cross-Platform",
     description:
       "Efficient cross-platform solutions using React Native and Flutter for maximum reach and cost-effectiveness.",
     icon: "</>",
+    color: "from-red-500 to-orange-500",
   },
-    {
+  {
     title: "Web Applications",
     description:
       "Progressive web applications that combine the best of web and mobile app experiences.",
-    icon: "",
+    icon: "🌐",
+    color: "from-blue-600 to-sky-500",
   },
-    {
+  {
     title: "AI Integration",
     description:
       "Machine learning and AI-powered features including GPT and LLM capabilities for intelligent automation.",
     icon: "",
+    color: "from-purple-500 to-indigo-500",
   },
-      {
+  {
     title: "API Integration",
     description:
       "Seamless third-party integrations and custom API development for enhanced functionality and connectivity.",
-    icon: "",
+    icon: "🔌",
+    color: " from-purple-500 to-pink-500 ",
   },
 ];
+
+
+
 
 export default function ServicesSection() {
   return (
     <section id="services" className="bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 py-16">
+        {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Our Mobile App Development Services
@@ -53,16 +62,33 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Responsive Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col gap-4"
+              className="
+                group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 
+                flex flex-col gap-4 cursor-pointer
+                transition-all duration-300
+                hover:shadow-xl hover:-translate-y-2 hover:border-purple-300
+              "
             >
-              <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl">
+              {/* Icon box with different gradient per item */}
+              <div
+                className={`
+                  h-12 w-12 rounded-xl 
+                  bg-gradient-to-br ${service.color}
+                  flex items-center justify-center 
+                  text-white text-xl 
+                  transition-all duration-300
+                  group-hover:scale-110
+                `}
+              >
                 {service.icon}
               </div>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+
+              <h3 className="text-lg font-bold">{service.title}</h3>
               <p className="text-sm text-gray-600">{service.description}</p>
             </div>
           ))}
@@ -71,3 +97,4 @@ export default function ServicesSection() {
     </section>
   );
 }
+

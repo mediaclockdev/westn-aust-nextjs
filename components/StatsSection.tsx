@@ -10,13 +10,33 @@ export default function StatsSection() {
 
   return (
     <section className="bg-white">
-      <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div
+        className="
+      max-w-6xl mx-auto 
+      px-4 py-12 
+      grid 
+      grid-cols-2 
+      sm:grid-cols-2 
+      md:grid-cols-4 
+      gap-6 sm:gap-8 
+      text-center
+    "
+      >
         {stats.map((item) => (
           <div key={item.label}>
-            <p className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            <p
+              className="
+            text-2xl sm:text-3xl md:text-4xl 
+            font-extrabold 
+            bg-clip-text text-transparent 
+            bg-gradient-to-r from-blue-500 to-purple-500
+          "
+            >
               {item.value}
             </p>
-            <p className="mt-2 text-sm text-gray-600">{item.label}</p>
+            <p className="mt-2 text-xs sm:text-sm md:text-base text-gray-600">
+              {item.label}
+            </p>
           </div>
         ))}
       </div>
