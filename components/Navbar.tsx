@@ -12,6 +12,7 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
         
         {/* Left: Logo */}
+      
         <div className="flex items-center gap-4">
           <div className="h-10 w-10 flex items-center justify-center">
             <Image
@@ -22,11 +23,13 @@ export default function Navbar() {
               className="rounded-lg object-contain scale-160"
             />
           </div>
-          <span className="font-semibold text-lg">WA Dev Company</span>
+          <span className="font-semibold text-xl ">WA Dev Company</span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-sm text-gray-700">
+
+        <div className="flex items-center gap-10">
+        <ul className="hidden md:flex items-center gap-8 text-balance text-gray-700">
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
@@ -37,7 +40,7 @@ export default function Navbar() {
       <div className="flex md:block justify-center md:justify-start">
   <button 
     className="cursor-pointer
-      rounded-full px-5 py-2 text-sm font-semibold 
+      rounded-full px-5 py-2 text-base font-semibold 
       text-white bg-gradient-to-r from-blue-500 to-purple-500
       w-full sm:w-auto
       transition-all duration-600
@@ -48,6 +51,8 @@ export default function Navbar() {
     Get a Quote
   </button>
 </div>
+</div>
+
 
 
 
