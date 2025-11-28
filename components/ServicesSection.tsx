@@ -5,42 +5,42 @@ const services = [
     description:
       "Native iOS applications that deliver exceptional user experiences with cutting-edge features and seamless performance.",
     icon: "",
-    color: "from-purple-500 to-indigo-500",
+    color: "from-blue-500 to-blue-500",
   },
   {
     title: "Android Development",
     description:
       "Robust Android applications optimized for various devices and screen sizes with modern Material Design principles.",
     icon: "",
-    color: " from-purple-500 to-pink-500 ",
+    color: " from-blue-500 to-blue-500 ",
   },
   {
     title: "Cross-Platform",
     description:
       "Efficient cross-platform solutions using React Native and Flutter for maximum reach and cost-effectiveness.",
     icon: "</>",
-    color: "from-red-500 to-orange-500",
+    color: "from-blue-500 to-blue-500",
   },
   {
     title: "Web Applications",
     description:
       "Progressive web applications that combine the best of web and mobile app experiences.",
     icon: "🌐",
-    color: "from-blue-600 to-sky-500",
+    color: "from-blue-500 to-blue-500",
   },
   {
     title: "AI Integration",
     description:
       "Machine learning and AI-powered features including GPT and LLM capabilities for intelligent automation.",
     icon: "",
-    color: "from-purple-500 to-indigo-500",
+    color: "from-blue-500 to-blue-500",
   },
   {
     title: "API Integration",
     description:
       "Seamless third-party integrations and custom API development for enhanced functionality and connectivity.",
     icon: "🔌",
-    color: " from-purple-500 to-pink-500 ",
+    color: " from-blue-500 to-blue-500 ",
   },
 ];
 

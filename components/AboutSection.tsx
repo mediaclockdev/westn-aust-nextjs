@@ -69,9 +69,9 @@ export default function AboutSection() {
           absolute 
           bottom-4 right-4 
           sm:bottom-6 sm:right-6 
-          h-15 w-15 sm:h-16 sm:w-16 
+          h-18 w-18 sm:h-18 sm:w-18 
           rounded-2xl 
-          bg-gradient-to-br from-purple-500 to-pink-500 
+          bg-gradient-to-r from-[#084EC0] to-[#0F56D1]
           flex items-center justify-center 
           shadow-lg
         "

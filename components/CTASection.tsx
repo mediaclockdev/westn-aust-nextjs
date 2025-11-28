@@ -3,7 +3,7 @@ export default function CTASection() {
   return (
    <section
   id="contact"
-  className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+  className="bg-gradient-to-r from-[#084EC0] to-[#0F56D1]"
 >
   <div className="max-w-6xl mx-auto px-4 py-14 text-center text-white">
 
@@ -25,7 +25,8 @@ export default function CTASection() {
       <button
         className=" cursor-pointer
           rounded-full px-6 py-3 
-          bg-white text-gray-900 
+         bg-gradient-to-r from-[#E53935] to-[#E53935] shadow-md
+          text-white-900 
           text-sm sm:text-base font-semibold 
           shadow-md
           transition-all duration-300

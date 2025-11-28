@@ -2,10 +2,10 @@
 
 export default function StatsSection() {
   const stats = [
-    { value: "12+", label: "Years Experience" },
-    { value: "1000+", label: "Apps Developed" },
-    { value: "500+", label: "Happy Clients" },
-    { value: "24/7", label: "Support" },
+    { value: "12+", label: "Years Experience" , color: "from-blue-500 to-blue-500", },
+    { value: "1000+", label: "Apps Developed" , color: "from-blue-500 to-blue-500", },
+    { value: "500+", label: "Happy Clients" , color: "from-red-500 to-red-500", },
+    { value: "24/7", label: "Support" , color: "from-blue-500 to-blue-500", },
   ];
 
   return (
@@ -25,12 +25,12 @@ export default function StatsSection() {
         {stats.map((item) => (
           <div key={item.label}>
             <p
-              className="
+              className={`
             text-2xl sm:text-3xl md:text-4xl 
             font-extrabold 
             bg-clip-text text-transparent 
-            bg-gradient-to-r from-blue-500 to-purple-500
-          "
+            bg-gradient-to-br ${item.color}
+          `}
             >
               {item.value}
             </p>

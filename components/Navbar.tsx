@@ -14,7 +14,7 @@ export default function Navbar() {
         {/* Left: Logo */}
       
         <div className="flex items-center gap-4">
-          <div className="h-10 w-10 flex items-center justify-center">
+          <div className="h-10 w-10 flex items-center justify-center ">
             <Image
               src="/WA logo.png"
               width={40}
@@ -41,7 +41,7 @@ export default function Navbar() {
   <button 
     className="cursor-pointer
       rounded-full px-5 py-2 text-base font-semibold 
-      text-white bg-gradient-to-r from-blue-500 to-purple-500
+      text-white bg-gradient-to-r from-[#084EC0] to-[#0F56D1]
       w-full sm:w-auto
       transition-all duration-600
     hover:-translate-y-1 hover:shadow-xl
